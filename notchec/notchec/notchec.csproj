@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{238F1DD8-38EC-452E-8F5C-F5F3C7A5DDA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>notchec</RootNamespace>
+    <AssemblyName>notchec</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltaBajasModifForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaBajasModifForm.Designer.cs">
+      <DependentUpon>AltaBajasModifForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormatoCheque.cs" />
+    <Compile Include="FormatoNota.cs" />
+    <Compile Include="FormCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheque.Designer.cs">
+      <DependentUpon>FormCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moneda.cs" />
+    <Compile Include="Movimiento.cs" />
+    <Compile Include="MovimientoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientoForm.Designer.cs">
+      <DependentUpon>MovimientoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuestraInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuestraInformacion.Designer.cs">
+      <DependentUpon>MuestraInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nota.cs" />
+    <Compile Include="Notas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notas.Designer.cs">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print.Designer.cs">
+      <DependentUpon>print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Punto.cs" />
+    <EmbeddedResource Include="AltaBajasModifForm.resx">
+      <DependentUpon>AltaBajasModifForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheque.resx">
+      <DependentUpon>FormCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimientoForm.resx">
+      <DependentUpon>MovimientoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuestraInformacion.resx">
+      <DependentUpon>MuestraInformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas.resx">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print.resx">
+      <DependentUpon>print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheques.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confImpresora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acercaDe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
